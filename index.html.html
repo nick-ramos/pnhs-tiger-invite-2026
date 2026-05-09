@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Tiger Invite 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:wght@400;500;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--cr:#B00020;--crg:rgba(176,0,32,0.4);--bg:#0a0a0a;--s1:#111;--s2:#1a1a1a;--s3:#222;--bd:#2a2a2a;--w:#fff;--g:#aaa;--g2:#666;--win:#22c55e;--loss:#ef4444}
+body{background:var(--bg);color:var(--w);font-family:'DM Sans',sans-serif;min-height:100vh;overflow-x:hidden}
+header{background:linear-gradient(135deg,#0a0a0a 0%,#1a0008 50%,#0a0a0a 100%);border-bottom:3px solid var(--cr);position:relative;overflow:hidden}
+header::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(-45deg,transparent,transparent 40px,rgba(176,0,32,0.04) 40px,rgba(176,0,32,0.04) 80px)}
+.hi{max-width:1100px;margin:0 auto;padding:32px 20px 24px;display:flex;align-items:center;gap:20px;position:relative;z-index:1}
+.logo{width:64px;height:64px;background:var(--cr);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:28px;flex-shrink:0;box-shadow:0 0 28px var(--crg)}
+.ht h1{font-family:'Anton',sans-serif;font-size:clamp(24px,5vw,48px);letter-spacing:2px;text-transform:uppercase;line-height:1}
+.ht h1 span{color:var(--cr)}
+.ht p{font-family:'DM Mono',monospace;font-size:12px;color:var(--g);margin-top:6px;letter-spacing:1px}
+.band{background:var(--cr);overflow:hidden;white-space:nowrap;padding:9px 0}
+.band-inner{display:inline-block;animation:tick 38s linear infinite;font-family:'DM Mono',monospace;font-size:12px;letter-spacing:2px;text-transform:uppercase}
+@keyframes tick{from{transform:translateX(100vw)}to{transform:translateX(-100%)}}
+.band-inner span{margin:0 44px}
+nav{background:var(--s1);border-bottom:1px solid var(--bd);position:sticky;top:0;z-index:100;box-shadow:0 2px 20px rgba(0,0,0,.8)}
+.ni{max-width:1100px;margin:0 auto;display:flex;padding:0 20px}
+.nb{font-family:'Anton',sans-serif;font-size:14px;letter-spacing:2px;text-transform:uppercase;color:var(--g);background:none;border:none;border-bottom:3px solid transparent;padding:16px 24px;cursor:pointer;transition:all .2s}
+.nb:hover{color:var(--w)}
+.nb.a{color:var(--cr);border-bottom-color:var(--cr)}
+main{max-width:1100px;margin:0 auto;padding:32px 20px 80px}
+.tp{display:none}.tp.a{display:block}
+.st{font-family:'Anton',sans-serif;font-size:26px;letter-spacing:2px;text-transform:uppercase;margin-bottom:22px;display:flex;align-items:center;gap:12px}
+.st::after{content:'';flex:1;height:2px;background:linear-gradient(to right,var(--cr),transparent)}
+.abar{background:var(--s2);border:1px solid var(--bd);border-radius:10px;padding:14px 18px;margin-bottom:24px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.abar label{font-family:'DM Mono',monospace;font-size:11px;color:var(--g);text-transform:uppercase;letter-spacing:1px}
+.abar input[type=password]{background:var(--s3);border:1px solid var(--bd);border-radius:6px;color:var(--w);font-family:'DM Mono',monospace;font-size:13px;padding:7px 12px;outline:none;width:160px;transition:border-color .2s}
+.abar input[type=password]:focus{border-color:var(--cr)}
+.btn{font-family:'Anton',sans-serif;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;padding:8px 18px;border-radius:6px;border:none;cursor:pointer;transition:all .2s}
+.bc{background:var(--cr);color:#fff}.bc:hover{background:#cc0025}
+.bg{background:var(--s3);color:var(--g);border:1px solid var(--bd)}.bg:hover{border-color:var(--cr);color:var(--w)}
+.as{font-family:'DM Mono',monospace;font-size:12px;padding:4px 10px;border-radius:4px}
+.asl{background:rgba(239,68,68,.15);color:var(--loss)}
+.asu{background:rgba(34,197,94,.15);color:var(--win)}
+.rf{background:var(--s2);border:1px solid var(--bd);border-radius:10px;padding:22px;margin-bottom:28px;display:none}
+.rf.v{display:block}
+.fr{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px}
+.fg{display:flex;flex-direction:column;gap:5px}
+.fg label{font-family:'DM Mono',monospace;font-size:11px;color:var(--g);text-transform:uppercase;letter-spacing:1px}
+.fg input,.fg select{background:var(--s3);border:1px solid var(--bd);border-radius:6px;color:var(--w);font-family:'DM Sans',sans-serif;font-size:13px;padding:9px 12px;outline:none;transition:border-color .2s}
+.fg input:focus,.fg select:focus{border-color:var(--cr)}
+.fg select option{background:var(--s3)}
+.fa{display:flex;gap:10px;margin-top:8px}
+.sc{background:var(--s2);border:1px solid var(--bd);border-radius:10px;overflow:hidden;margin-bottom:32px}
+.sh{padding:14px 18px;border-bottom:1px solid var(--bd);display:flex;align-items:center;justify-content:space-between}
+.sh h3{font-family:'Anton',sans-serif;font-size:15px;letter-spacing:1.5px;text-transform:uppercase;color:var(--cr)}
+table{width:100%;border-collapse:collapse}
+thead tr{background:var(--s3)}
+thead th{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:1px;text-transform:uppercase;color:var(--g);padding:11px 14px;text-align:left;border-bottom:1px solid var(--bd)}
+tbody tr{border-bottom:1px solid var(--bd);transition:background .15s}
+tbody tr:last-child{border-bottom:none}
+tbody tr:hover{background:rgba(176,0,32,.07)}
+tbody td{font-size:13px;padding:12px 14px}
+.rc{font-family:'Anton',sans-serif;font-size:17px;color:var(--g2);width:36px}
+.rc.t{color:var(--cr)}
+.tnc{font-weight:700}
+.mn{font-family:'DM Mono',monospace;font-size:12px}
+.badge{font-family:'DM Mono',monospace;font-size:10px;font-weight:500;padding:3px 8px;border-radius:4px;display:inline-block}
+.bw{background:rgba(34,197,94,.15);color:var(--win)}
+.bl{background:rgba(239,68,68,.15);color:var(--loss)}
+.bh{background:rgba(176,0,32,.2);color:var(--cr)}
+.bp{background:var(--s3);color:var(--g);border:1px solid var(--bd)}
+.rcard{background:var(--s2);border:1px solid var(--bd);border-radius:10px;padding:16px 18px;margin-bottom:10px;display:flex;align-items:center;gap:14px;transition:border-color .2s,transform .15s}
+.rcard:hover{border-color:var(--cr);transform:translateX(3px)}
+.rt{flex:1}
+.rm{font-family:'Anton',sans-serif;font-size:17px;letter-spacing:1px}
+.rm .vs{color:var(--g2);font-size:13px;margin:0 6px}
+.rmeta{font-family:'DM Mono',monospace;font-size:11px;color:var(--g);margin-top:3px}
+.rscore{text-align:center;min-width:70px}
+.rscore .sets{font-family:'Anton',sans-serif;font-size:26px;color:var(--cr);line-height:1}
+.rscore .pts{font-family:'DM Mono',monospace;font-size:10px;color:var(--g)}
+.db{background:none;border:none;color:var(--g2);cursor:pointer;font-size:16px;padding:3px 7px;border-radius:4px;transition:color .2s,background .2s;display:none}
+.db:hover{color:var(--loss);background:rgba(239,68,68,.1)}
+.db.v{display:block}
+.es{text-align:center;padding:50px 20px;color:var(--g2);font-family:'DM Mono',monospace;font-size:12px}
+.es .big{font-family:'Anton',sans-serif;font-size:36px;display:block;margin-bottom:10px;opacity:.3}
+.ptabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px}
+.ptb{font-family:'Anton',sans-serif;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;padding:9px 18px;border-radius:6px;background:var(--s2);border:1.5px solid var(--bd);color:var(--g);cursor:pointer;transition:all .2s}
+.ptb:hover{border-color:var(--cr);color:var(--w)}
+.ptb.a{background:var(--cr);border-color:var(--cr);color:#fff}
+.pp{display:none}.pp.a{display:block}
+.pi{background:var(--s2);border:1px solid var(--bd);border-left:4px solid var(--cr);border-radius:10px;padding:14px 18px;margin-bottom:18px;display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.pil{font-family:'DM Mono',monospace;font-size:11px;color:var(--g);text-transform:uppercase;letter-spacing:1px}
+.piv{font-family:'Anton',sans-serif;font-size:17px;letter-spacing:1px;margin-top:2px}
+.divv{width:1px;height:32px;background:var(--bd)}
+.mc{background:var(--s2);border:1px solid var(--bd);border-radius:10px;padding:18px 22px;margin-bottom:10px;display:grid;grid-template-columns:95px 1fr auto;align-items:center;gap:14px;transition:border-color .2s,box-shadow .2s}
+.mc:hover{border-color:var(--cr);box-shadow:0 4px 20px rgba(176,0,32,.15)}
+.mtime{font-family:'DM Mono',monospace;font-size:14px;font-weight:500;color:var(--cr)}
+.mteams{font-family:'Anton',sans-serif;font-size:19px;letter-spacing:1px}
+.mteams .vs{font-size:13px;color:var(--g2);margin:0 6px}
+.msub{font-family:'DM Mono',monospace;font-size:10px;color:var(--g);margin-top:3px}
+.mst{font-family:'DM Mono',monospace;font-size:10px;padding:4px 9px;border-radius:5px;background:var(--s3);color:var(--g);white-space:nowrap;border:1px solid var(--bd)}
+.mst.d{background:rgba(34,197,94,.1);color:var(--win);border-color:rgba(34,197,94,.3)}
+.tgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px}
+.tcard{background:var(--s2);border:1px solid var(--bd);border-radius:10px;padding:18px;display:flex;align-items:center;gap:12px;transition:border-color .2s,transform .15s,box-shadow .2s}
+.tcard:hover{border-color:var(--cr);transform:translateY(-2px);box-shadow:0 8px 24px rgba(176,0,32,.15)}
+.tav{width:42px;height:42px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-family:'Anton',sans-serif;font-size:15px;flex-shrink:0;color:#fff}
+.tcn{font-weight:700;font-size:14px;line-height:1.2}
+.tcp{font-family:'DM Mono',monospace;font-size:10px;color:var(--g);margin-top:3px}
+footer{background:var(--s1);border-top:1px solid var(--bd);padding:20px;text-align:center;font-family:'DM Mono',monospace;font-size:11px;color:var(--g2)}
+footer span{color:var(--cr)}
+.toast{position:fixed;bottom:28px;right:28px;background:var(--s2);border:1px solid var(--cr);border-radius:8px;padding:12px 18px;font-family:'DM Mono',monospace;font-size:12px;color:var(--w);z-index:9999;transform:translateY(70px);opacity:0;transition:all .3s;box-shadow:0 8px 28px rgba(0,0,0,.5)}
+.toast.show{transform:translateY(0);opacity:1}
+.toast.success{border-color:var(--win)}
+.toast.error{border-color:var(--loss)}
+@media(max-width:600px){.fr{grid-template-columns:1fr}.mc{grid-template-columns:70px 1fr}.mst{display:none}}
+</style>
+</head>
+<body>
+<header>
+  <div class="hi">
+    <div class="logo">🐯</div>
+    <div class="ht">
+      <h1>Tiger <span>Invite</span> 2026</h1>
+      <p>Plainfield North High School &nbsp;·&nbsp; Volleyball &nbsp;·&nbsp; May 9, 2026</p>
+    </div>
+  </div>
+</header>
+<div class="band">
+  <div class="band-inner">
+    <span>🏐 Tiger Invite 2026</span><span>📍 Plainfield North HS</span><span>📅 May 9, 2026</span><span>12 Teams</span><span>4 Pools</span><span>4 Courts</span><span>Pool A · Court 2 · Fieldhouse</span><span>Pool B · Court 1 · Main Gym</span><span>Pool C · Court 3 · Fieldhouse</span><span>Pool D · Court 4 · Fieldhouse</span><span>🐯 Go Tigers!</span><span>🏐 Tiger Invite 2026</span><span>📍 Plainfield North HS</span><span>📅 May 9, 2026</span>
+  </div>
+</div>
+<nav>
+  <div class="ni">
+    <button class="nb a" id="nv-results" onclick="showTab('results',this)">Results</button>
+    <button class="nb" id="nv-schedule" onclick="showTab('schedule',this)">Schedule</button>
+    <button class="nb" id="nv-teams" onclick="showTab('teams',this)">Teams</button>
+  </div>
+</nav>
+<main>
+  <div class="tp a" id="tab-results">
+    <div class="st">Standings &amp; Results</div>
+    <div class="abar">
+      <label for="apwd">Admin Access</label>
+      <input type="password" id="apwd" placeholder="Enter password…" onkeydown="if(event.key==='Enter')unlockAdmin()"/>
+      <button class="btn bc" onclick="unlockAdmin()">Unlock</button>
+      <button class="btn bg" id="lbtn" onclick="lockAdmin()" style="display:none">Lock</button>
+      <span class="as asl" id="ast">🔒 Locked</span>
+    </div>
+    <div class="rf" id="rform">
+      <div class="st" style="font-size:17px;margin-bottom:16px;">Add Match Result</div>
+      <div class="fr">
+        <div class="fg"><label>Team A</label><select id="tA"></select></div>
+        <div class="fg"><label>Team B</label><select id="tB"></select></div>
+      </div>
+      <div class="fr">
+        <div class="fg"><label>Team A — Sets Won</label><input type="number" id="sA" min="0" max="5" placeholder="0"/></div>
+        <div class="fg"><label>Team B — Sets Won</label><input type="number" id="sB" min="0" max="5" placeholder="0"/></div>
+      </div>
+      <div class="fr">
+        <div class="fg"><label>Team A — Total Points</label><input type="number" id="pA" min="0" placeholder="0"/></div>
+        <div class="fg"><label>Team B — Total Points</label><input type="number" id="pB" min="0" placeholder="0"/></div>
+      </div>
+      <div class="fr" style="grid-template-columns:1fr 1fr 1fr">
+        <div class="fg"><label>Pool</label><select id="mpool"><option value="A">Pool A</option><option value="B">Pool B</option><option value="C">Pool C</option><option value="D">Pool D</option></select></div>
+        <div class="fg"><label>Time</label><input type="text" id="mtime" placeholder="8:00 AM"/></div>
+        <div class="fg"><label>Court</label><input type="text" id="mcourt" placeholder="Court 1"/></div>
+      </div>
+      <div class="fa">
+        <button class="btn bc" onclick="addResult()">Save Result</button>
+        <button class="btn bg" onclick="clearForm()">Clear</button>
+      </div>
+    </div>
+    <div class="sc">
+      <div class="sh">
+        <h3>Live Standings</h3>
+        <span style="font-family:'DM Mono',monospace;font-size:11px;color:var(--g)">WIN % · PT DIFF</span>
+      </div>
+      <div style="overflow-x:auto">
+        <table>
+          <thead><tr><th>#</th><th>Team</th><th>Pool</th><th>W</th><th>L</th><th>Sets W</th><th>Sets L</th><th>Pts For</th><th>Pts Agnst</th><th>Pt Diff</th><th>Win%</th></tr></thead>
+          <tbody id="sb"></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="st" style="font-size:19px;">Match Results</div>
+    <div id="rl"></div>
+  </div>
+  <div class="tp" id="tab-schedule">
+    <div class="st">Tournament Schedule</div>
+    <div class="ptabs">
+      <button class="ptb a" onclick="showPool('A',this)">Pool A</button>
+      <button class="ptb" onclick="showPool('B',this)">Pool B</button>
+      <button class="ptb" onclick="showPool('C',this)">Pool C</button>
+      <button class="ptb" onclick="showPool('D',this)">Pool D</button>
+    </div>
+    <div class="pp a" id="pool-A">
+      <div class="pi"><div><div class="pil">Pool</div><div class="piv">Pool A</div></div><div class="divv"></div><div><div class="pil">Location</div><div class="piv">Court 2 · Fieldhouse</div></div><div class="divv"></div><div><div class="pil">Teams</div><div class="piv">Marist · Plainfield South · Plainfield East</div></div></div>
+      <div id="sch-A"></div>
+    </div>
+    <div class="pp" id="pool-B">
+      <div class="pi"><div><div class="pil">Pool</div><div class="piv">Pool B</div></div><div class="divv"></div><div><div class="pil">Location</div><div class="piv">Court 1 · Main Gym</div></div><div class="divv"></div><div><div class="pil">Teams</div><div class="piv">Plainfield North · Marmion Academy · Lockport</div></div></div>
+      <div id="sch-B"></div>
+    </div>
+    <div class="pp" id="pool-C">
+      <div class="pi"><div><div class="pil">Pool</div><div class="piv">Pool C</div></div><div class="divv"></div><div><div class="pil">Location</div><div class="piv">Court 3 · Fieldhouse</div></div><div class="divv"></div><div><div class="pil">Teams</div><div class="piv">Bolingbrook · Geneva · Lincoln-Way Central</div></div></div>
+      <div id="sch-C"></div>
+    </div>
+    <div class="pp" id="pool-D">
+      <div class="pi"><div><div class="pil">Pool</div><div class="piv">Pool D</div></div><div class="divv"></div><div><div class="pil">Location</div><div class="piv">Court 4 · Fieldhouse</div></div><div class="divv"></div><div><div class="pil">Teams</div><div class="piv">Downers Grove North · West Aurora · Neuqua Valley</div></div></div>
+      <div id="sch-D"></div>
+    </div>
+  </div>
+  <div class="tp" id="tab-teams">
+    <div class="st">Participating Teams</div>
+    <div class="tgrid" id="tg"></div>
+  </div>
+</main>
+<footer><span>Tiger Invite 2026</span> &nbsp;·&nbsp; Plainfield North High School &nbsp;·&nbsp; May 9, 2026 &nbsp;·&nbsp; Volleyball</footer>
+<div class="toast" id="toast"></div>
+<script>
+const TEAMS=[
+  {name:"Bolingbrook",pool:"C",ini:"BO"},
+  {name:"Downers Grove North",pool:"D",ini:"DG"},
+  {name:"Geneva",pool:"C",ini:"GE"},
+  {name:"Lincoln-Way Central",pool:"C",ini:"LC"},
+  {name:"Lockport",pool:"B",ini:"LO"},
+  {name:"Marist",pool:"A",ini:"MA"},
+  {name:"Marmion Academy",pool:"B",ini:"MM"},
+  {name:"Neuqua Valley",pool:"D",ini:"NV"},
+  {name:"Plainfield East",pool:"A",ini:"PE"},
+  {name:"Plainfield North",pool:"B",ini:"PN",host:true},
+  {name:"Plainfield South",pool:"A",ini:"PS"},
+  {name:"West Aurora",pool:"D",ini:"WA"},
+];
+const SCHED={
+  A:[{t:"8:00 AM",a:"Marist",b:"Plainfield South"},{t:"9:00 AM",a:"Marist",b:"Plainfield East"},{t:"10:00 AM",a:"Plainfield East",b:"Plainfield South"}],
+  B:[{t:"8:00 AM",a:"Plainfield North",b:"Marmion Academy"},{t:"9:00 AM",a:"Plainfield North",b:"Lockport"},{t:"10:00 AM",a:"Lockport",b:"Marmion Academy"}],
+  C:[{t:"8:00 AM",a:"Bolingbrook",b:"Geneva"},{t:"9:00 AM",a:"Bolingbrook",b:"Lincoln-Way Central"},{t:"10:00 AM",a:"Lincoln-Way Central",b:"Geneva"}],
+  D:[{t:"8:00 AM",a:"Downers Grove North",b:"West Aurora"},{t:"9:00 AM",a:"Downers Grove North",b:"Neuqua Valley"},{t:"10:00 AM",a:"Neuqua Valley",b:"West Aurora"}],
+};
+const CRT={A:"Court 2 · Fieldhouse",B:"Court 1 · Main Gym",C:"Court 3 · Fieldhouse",D:"Court 4 · Fieldhouse"};
+let admin=false;
+let results=[];
+try{results=JSON.parse(localStorage.getItem('ti2026')||'[]');}catch(e){}
+
+function init(){
+  ['tA','tB'].forEach((id,i)=>{
+    const s=document.getElementById(id);
+    s.innerHTML=TEAMS.map(t=>`<option>${t.name}</option>`).join('');
+    s.selectedIndex=i;
+  });
+  buildSched(); buildTeams(); renderResults(); renderStandings();
+}
+
+function buildSched(){
+  Object.entries(SCHED).forEach(([pool,ms])=>{
+    const el=document.getElementById('sch-'+pool);
+    if(!el)return;
+    el.innerHTML=ms.map(m=>{
+      const done=results.find(r=>r.pool===pool&&((r.a===m.a&&r.b===m.b)||(r.a===m.b&&r.b===m.a)));
+      return `<div class="mc"><div class="mtime">${m.t}</div><div><div class="mteams">${m.a}<span class="vs">vs</span>${m.b}</div><div class="msub">${CRT[pool]}</div></div><div class="mst${done?' d':''}">${done?'✓ FINAL':'UPCOMING'}</div></div>`;
+    }).join('');
+  });
+}
+
+function buildTeams(){
+  const g=document.getElementById('tg');
+  const cols=['#B00020','#8b0000','#a00018','#6d0010','#cc0028','#900018','#7a0016','#d40030','#400008','#B00020','#600012','#b80022'];
+  g.innerHTML=TEAMS.map((t,i)=>`
+    <div class="tcard">
+      <div class="tav" style="background:${t.host?'#B00020':cols[i]};${t.host?'box-shadow:0 0 14px rgba(176,0,32,0.5)':'opacity:.75'}">${t.ini}</div>
+      <div><div class="tcn">${t.name}${t.host?' <span class="badge bh" style="font-size:9px;vertical-align:middle;margin-left:5px">HOST</span>':''}</div><div class="tcp">Pool ${t.pool}</div></div>
+    </div>`).join('');
+}
+
+function showTab(tab,btn){
+  document.querySelectorAll('.tp').forEach(e=>e.classList.remove('a'));
+  document.querySelectorAll('.nb').forEach(e=>e.classList.remove('a'));
+  document.getElementById('tab-'+tab).classList.add('a');
+  btn.classList.add('a');
+}
+function showPool(pool,btn){
+  document.querySelectorAll('.pp').forEach(e=>e.classList.remove('a'));
+  document.querySelectorAll('.ptb').forEach(e=>e.classList.remove('a'));
+  document.getElementById('pool-'+pool).classList.add('a');
+  btn.classList.add('a');
+}
+
+function unlockAdmin(){
+  if(document.getElementById('apwd').value==='tigers2026'){
+    admin=true;
+    document.getElementById('ast').textContent='🔓 Unlocked';
+    document.getElementById('ast').className='as asu';
+    document.getElementById('lbtn').style.display='';
+    document.getElementById('rform').classList.add('v');
+    document.getElementById('apwd').value='';
+    document.querySelectorAll('.db').forEach(b=>b.classList.add('v'));
+    toast('Admin access granted!','success');
+  } else { toast('Incorrect password.','error'); document.getElementById('apwd').value=''; }
+}
+function lockAdmin(){
+  admin=false;
+  document.getElementById('ast').textContent='🔒 Locked';
+  document.getElementById('ast').className='as asl';
+  document.getElementById('lbtn').style.display='none';
+  document.getElementById('rform').classList.remove('v');
+  document.querySelectorAll('.db').forEach(b=>b.classList.remove('v'));
+  toast('Admin locked.');
+}
+
+function addResult(){
+  const tA=document.getElementById('tA').value,tB=document.getElementById('tB').value;
+  const sA=parseInt(document.getElementById('sA').value)||0,sB=parseInt(document.getElementById('sB').value)||0;
+  const pA=parseInt(document.getElementById('pA').value)||0,pB=parseInt(document.getElementById('pB').value)||0;
+  const pool=document.getElementById('mpool').value;
+  const time=document.getElementById('mtime').value||'';
+  const court=document.getElementById('mcourt').value||'';
+  if(tA===tB){toast('Teams must be different.','error');return;}
+  if(sA===0&&sB===0){toast('Enter sets for at least one team.','error');return;}
+  results.push({id:Date.now(),a:tA,b:tB,sA,sB,pA,pB,pool,time,court});
+  save();renderResults();renderStandings();buildSched();clearForm();toast('Result saved!','success');
+}
+function deleteResult(id){
+  if(!admin)return;
+  results=results.filter(r=>r.id!==id);
+  save();renderResults();renderStandings();buildSched();toast('Result removed.');
+}
+function clearForm(){['sA','sB','pA','pB','mtime','mcourt'].forEach(id=>document.getElementById(id).value='');}
+function save(){try{localStorage.setItem('ti2026',JSON.stringify(results));}catch(e){}}
+
+function renderResults(){
+  const rl=document.getElementById('rl');
+  if(!results.length){
+    rl.innerHTML='<div class="es"><span class="big">🏐</span>No results entered yet. Check back during the tournament!</div>';return;
+  }
+  rl.innerHTML=[...results].reverse().map(r=>{
+    const wA=r.sA>r.sB,wB=r.sB>r.sA,diff=r.pA-r.pB;
+    return `<div class="rcard">
+      <div class="rt">
+        <div class="rm"><span style="color:${wA?'var(--win)':'var(--w)'}">${r.a}</span><span class="vs">vs</span><span style="color:${wB?'var(--win)':'var(--w)'}">${r.b}</span></div>
+        <div class="rmeta">Pool ${r.pool}${r.time?' · '+r.time:''}${r.court?' · '+r.court:''} · Diff: <span style="color:${diff>0?'var(--win)':diff<0?'var(--loss)':'var(--g)'}">${diff>0?'+':''}${diff}</span></div>
+      </div>
+      <div class="rscore"><div class="sets">${r.sA}–${r.sB}</div><div class="pts">${r.pA}–${r.pB} pts</div></div>
+      <span class="badge ${wA?'bw':wB?'bl':''}" style="min-width:52px;text-align:center">${wA?'A WIN':wB?'B WIN':'TIE'}</span>
+      <button class="db${admin?' v':''}" onclick="deleteResult(${r.id})">✕</button>
+    </div>`;
+  }).join('');
+}
+
+function renderStandings(){
+  const s={};
+  TEAMS.forEach(t=>{s[t.name]={pool:t.pool,w:0,l:0,sw:0,sl:0,pf:0,pa:0};});
+  results.forEach(r=>{
+    const a=s[r.a],b=s[r.b];if(!a||!b)return;
+    if(r.sA>r.sB){a.w++;b.l++;}else if(r.sB>r.sA){b.w++;a.l++;}
+    a.sw+=r.sA;a.sl+=r.sB;a.pf+=r.pA;a.pa+=r.pB;
+    b.sw+=r.sB;b.sl+=r.sA;b.pf+=r.pB;b.pa+=r.pA;
+  });
+  const rows=Object.entries(s).map(([name,d])=>{
+    const g=d.w+d.l,pct=g?d.w/g:0,diff=d.pf-d.pa;
+    return{name,...d,g,pct,diff};
+  });
+  rows.sort((a,b)=>b.pct-a.pct||b.diff-a.diff||a.name.localeCompare(b.name));
+  const tb=document.getElementById('sb');
+  tb.innerHTML=rows.map((r,i)=>{
+    const h=TEAMS.find(t=>t.name===r.name)?.host;
+    return `<tr>
+      <td class="rc${i<3?' t':''}">${i+1}</td>
+      <td class="tnc">${r.name}${h?' <span class="badge bh" style="font-size:9px;vertical-align:middle;margin-left:4px">HOST</span>':''}</td>
+      <td><span class="badge bp">Pool ${r.pool}</span></td>
+      <td class="mn" style="color:var(--win)">${r.w}</td>
+      <td class="mn" style="color:var(--loss)">${r.l}</td>
+      <td class="mn">${r.sw}</td><td class="mn">${r.sl}</td>
+      <td class="mn">${r.pf}</td><td class="mn">${r.pa}</td>
+      <td class="mn" style="color:${r.diff>0?'var(--win)':r.diff<0?'var(--loss)':'var(--g)'}">${r.diff>0?'+':''}${r.diff}</td>
+      <td class="mn" style="color:var(--cr)">${r.g?(r.pct*100).toFixed(0)+'%':'—'}</td>
+    </tr>`;
+  }).join('');
+}
+
+let tt;
+function toast(msg,type=''){
+  const t=document.getElementById('toast');
+  t.textContent=msg;t.className='toast '+(type||'');
+  void t.offsetWidth;t.classList.add('show');
+  clearTimeout(tt);tt=setTimeout(()=>t.classList.remove('show'),2800);
+}
+init();
+</script>
+</body>
+</html>
